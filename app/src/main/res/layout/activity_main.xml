@@ -8,20 +8,9 @@
     app:theme="@style/AppTheme"
     tools:context="com.example.tn334421.materialdesign.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-
-            />
-
-    </android.support.design.widget.AppBarLayout>
+    <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar_default" />
 
     <include layout="@layout/content_main" />
 
